@@ -1,3 +1,4 @@
+//Written in plain javacript
 const path = require('path');
 const webpack = require('webpack');
 
@@ -5,6 +6,7 @@ module.exports = {
     entry: './src/index.js',
     mode: 'development',
     module: {
+        // to transform ES6 code to regular Javascript
         rules: [
             {
                 test: /\.(js|jsx)$/,
